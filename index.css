@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+}
+
+/* Custom Theme Variables & Classes */
+.theme-matrix {
+  --bg-primary: #050a05;
+  --bg-secondary: #0d160d;
+  --bg-tertiary: #142314;
+  --accent-color: #00FF66;
+  --accent-hover: #10B981;
+  --accent-glow: rgba(0, 255, 102, 0.25);
+  --text-main: #00FF66;
+  --text-muted: #4ade80;
+  --border-color: #00FF6633;
+}
+
+.theme-cyberpunk {
+  --bg-primary: #090814;
+  --bg-secondary: #121026;
+  --bg-tertiary: #1c183b;
+  --accent-color: #FF007F;
+  --accent-hover: #00F0FF;
+  --accent-glow: rgba(255, 0, 127, 0.3);
+  --text-main: #F472B6;
+  --text-muted: #38BDF8;
+  --border-color: #FF007F40;
+}
+
+.theme-midnight {
+  --bg-primary: #0B0F19;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1F2937;
+  --accent-color: #38BDF8;
+  --accent-hover: #818CF8;
+  --accent-glow: rgba(56, 189, 248, 0.2);
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --border-color: #374151;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Scanline Effect for Hacker Matrix Theme */
+.matrix-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 255, 102, 0.03) 50%
+  );
+  background-size: 100% 4px;
+}
+
